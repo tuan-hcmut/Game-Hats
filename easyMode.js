@@ -133,11 +133,11 @@ function checkLoss() {
 	}
 }
 
-	const myField = new Field(Field.generateField(23,57));
+	const myField = new Field(Field.generateField(26,62));
 let playGame = function(){
 	//const myField = new Field(Field.generateField(32,16));
-	let hatx = Math.floor(57*Math.random());
-	let haty = Math.floor(23*Math.random());
+	let hatx = Math.floor(62*Math.random());
+	let haty = Math.floor(26*Math.random());
 	myField.level[8][32] = 2;
 	myField.printField();
 }
@@ -157,7 +157,7 @@ function checkKey(e) {
 	}
     }
     else if (e.keyCode == 40 || e.keyCode === 83) {
-        if (playery<22 && !gameEnd){
+        if (playery<25 && !gameEnd){
         	playery++;
 		document.getElementById("playerChar").style.top=((24 * playery) + 'px');
 		checkWin();
@@ -175,7 +175,7 @@ function checkKey(e) {
     }
     else if (e.keyCode == 39 || e.keyCode === 68) {
 //Moving right
-	if (playerx<56 && !gameEnd){
+	if (playerx<61 && !gameEnd){
 	    	playerx++;
 		document.getElementById("playerChar").style.left=((24 * playerx) + 'px');
 		checkWin();
