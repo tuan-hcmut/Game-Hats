@@ -167,7 +167,7 @@ function checkLoss() {
 	}
 }
 
-	const myField = new Field(Field.generateField(26,62));
+	const myField = new Field(Field.generateField(26,63));
 let playGame = function(){
 	//const myField = new Field(Field.generateField(32,16));
 	let hats = Math.floor(Math.random()*3);
@@ -223,7 +223,7 @@ function checkKey(e) {
     }
     else if (e.keyCode == 39 || e.keyCode === 68) {
 //Moving right
-	if (playerx<61 && (!gameEnd || !gameEnd1) && checkLost !== 1){
+	if (playerx<62 && (!gameEnd || !gameEnd1) && checkLost !== 1){
 	    	playerx++;
 		document.getElementById("playerChar").style.left=((24 * playerx) + 'px');
 		checkWin();

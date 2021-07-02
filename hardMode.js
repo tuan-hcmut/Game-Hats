@@ -174,7 +174,7 @@ function checkLoss() {
 	}
 }
 
-	const myField = new Field(Field.generateField(26,62));
+	const myField = new Field(Field.generateField(26,63));
 let playGame = function(){
 	//const myField = new Field(Field.generateField(32,16));
     myField.level[7][3] = 2;
@@ -254,7 +254,7 @@ function checkKey(e) {
     }
     else if (e.keyCode == 39 || e.keyCode === 68) {
 //Moving right
-	if (playerx<61 && (!gameEnd || !gameEnd2 || !gameEnd1) && checkLost !== 1){
+	if (playerx<62 && (!gameEnd || !gameEnd2 || !gameEnd1) && checkLost !== 1){
 	    	playerx++;
 		document.getElementById("playerChar").style.left=((24 * playerx) + 'px');
         myField.level[playery][playerx -1] = 1;
