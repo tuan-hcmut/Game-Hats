@@ -1,0 +1,44 @@
+<html>
+
+<head>
+	<meta charset=UTF-8>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<title>Where is My Hat?</title>
+</head>
+
+<body onload="playGame()">
+	<h1>Hat or Splat?</h1>
+	<div id="box">
+        <div id ="numHat"></div>
+		<p class="mainText">
+			Avoid the holes!<br>
+			Arrow keys or (w,s,a,d) to control your character
+		</p>
+	</div>
+	<!--	<audio id="BGMusic" controls>
+			<source src="BackgroundMusic/bgm_0.wav" type="audio/wav">
+			Your browser does not support the audio element.
+	</audio>-->
+	<div id="gamearea">
+		<div id="winMessage">
+			YOU WIN!
+		</div>
+		<div id="loseMessage">
+			YOU LOSE!
+		</div>
+		<img id="playerChar" >
+		<!--<img id="exit" src="pack/rpg-pack/props n decorations/generic-rpg-barrel01.png">-->
+	</div>
+
+	<p>
+		<a href="https://github.com/tuan-hcmut" target="_blank">Source Code</a> <br>
+		Art pack by Bakudas and Gabe Fern from https://bakudas.itch.io/generic-rpg-pack<br>
+	</p>
+	<script src='hardMode.js'></script>
+
+    
+</body>
+
+</html>
